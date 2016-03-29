@@ -1,0 +1,278 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, user-scalable=no')
+
+		link(href='dist/css/style.min.css' rel='stylesheet')
+		link(href='dist/assets/favicon.ico' rel='shortcut icon')
+
+		script(src='dist/js/jquery.min.js' type='text/javascript')
+		script(src='dist/js/Chart.js' type='text/javascript')
+
+		title Peekaboo Daycare
+	body(
+		data-spy="scroll" 
+		data-offset="0" 
+		data-target="#theMenu")
+
+		// menu
+
+		nav.menu#theMenu
+			.menu-wrap
+				h1.logo
+					a(href='index.html#home') Peekaboo
+				i.icon-remove.menu-close
+				a.smoothScroll(href='#home') Home
+				a.smoothScroll(href='#services') Services
+				a.smoothScroll(href='#portfolio') Portfolio
+				a.smoothScroll(href='#About') About
+				a.smoothScroll(href='#contact') Contact
+		
+		#menuToggle
+			i.icon-reorder
+
+		// header
+
+		section#home(name='home')
+		#headerwrap
+			.container
+				br
+				h1 Peekaboo
+				h2 Daycare from infant to children
+				.row
+					br
+					br
+					br
+					.col-lg-6.col-lg-offset-3
+
+		// white section
+
+		#w
+			.container
+				.row
+					.col-lg-8.col-lg-offset-2
+						h3 Welcome to Peekaboo daycare!
+
+		// services section
+
+		section#services(name='services')
+		#g
+			.container
+				.row
+					h3 OUR SERVICES
+					br
+					br
+					.col-lg-3
+						img(src='/dist/assets/s1.png')
+						h4 London
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsam quod? Ea ipsam aut laboriosam velit libero sit reiciendis consequuntur deserunt quae distinctio quas sequi hic repudiandae facilis odio, quibusdam!
+					.col-lg-3
+						img(src='/dist/assets/s2.png')
+						h4 Berlin
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit assumenda odit, distinctio aliquid nobis reprehenderit. Similique reiciendis architecto, repellendus. Hic, maxime pariatur sapiente numquam et velit commodi accusantium, quisquam repellendus!
+					.col-lg-3
+						img(src='/dist/assets/s3.png')
+						h4 Paris
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsam quod? Ea ipsam aut laboriosam velit libero sit reiciendis consequuntur deserunt quae distinctio quas sequi hic repudiandae facilis odio, quibusdam!
+					.col-lg-3
+						img(src='/dist/assets/s4.png')
+						h4 Tokyo
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit assumenda odit, distinctio aliquid nobis reprehenderit. Similique reiciendis architecto, repellendus. Hic, maxime pariatur sapiente numquam et velit commodi accusantium, quisquam repellendus!
+		// charts - dark grey
+		#dg
+			.container
+				.row
+					h3 HOME ABOUT CHARTS?
+					br
+					br
+					.col-lg-4
+						canvas#javascript(
+							height='130' width='130'
+						)
+						br
+						h4 Javascript
+						br
+						script(type='text/javascript').
+							var doughnutData = [
+								{
+									value: 70,
+									color:"#f85c37"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+					.col-lg-4
+						canvas#bootstrap(
+							height='130' width='130'
+						)
+						br
+						h4 bootstrap
+						br
+						script(type='text/javascript').
+							var doughnutData = [
+								{
+									value: 70,
+									color:"#f85c37"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+					.col-lg-4
+						canvas#wordpress(
+							height='130' width='130'
+						)
+						br
+						h4 wordpress
+						br
+						script(type='text/javascript').
+							var doughnutData = [
+								{
+									value: 70,
+									color:"#f85c37"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+		
+		section#portfolio(
+			name='portfolio'
+		)
+			#portfoliowrap
+				.container
+					.row
+						h3 COOL THINGS
+						br
+						br
+						.col-lg-4.port-space
+							a(href='index.html')
+								img(src='/dist/assets/work1.png')
+						.col-lg-4.port-space
+							a(href='index.html')
+								img(src='/dist/assets/work2.png')
+						.col-lg-4.port-space
+							a(href='index.html')
+								img(src='/dist/assets/work3.png')
+
+		// white section
+		
+		#w
+			.container
+				.row
+					.col-lg-8.col-lg-offset-2
+						h3 WE'RE WORKING HARD TO WATCH THEM KIDS!
+		
+		// about
+
+		section#about(name='about')
+		#g
+			.container
+				.row
+					h3 ABOUT US
+					br
+					br
+					.col-lg-2
+					.col-lg-8
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sint est provident ipsum soluta dolorem necessitatibus! Alias totam similique nam iste tenetur magni nesciunt perferendis nihil, distinctio, necessitatibus ea at.
+					br
+					br
+
+					.col-lg-2
+					.col-lg-3.team
+						img.img-circle(
+							src='/dist/assets/team01.jpg'
+							height='90' width='90'
+						)
+						h4 Albert Einstein
+						h5
+							i Senior Dude
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, repellat.
+						a.icon-facebook(href='index.html#')
+						a.icon-twitter(href='index.html#')
+						a.icon-envelope(href='index.html#')
+					.col-lg-3.team
+						img.img-circle(
+							src='/dist/assets/team02.jpg'
+							height='90' width='90'
+						)
+						h4 Cladius Clay
+						h5
+							i Intern Puncher
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, repellat.
+						a.icon-facebook(href='index.html#')
+						a.icon-twitter(href='index.html#')
+						a.icon-envelope(href='index.html#')
+					.col-lg-3.team
+						img.img-circle(
+							src='/dist/assets/team03.jpg'
+							height='90' width='90'
+						)
+						h4 Neils Bohr
+						h5
+							i Social Media Manager
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, repellat.
+						a(href='index.html#')
+							i.icon-facebook
+						a.icon-twitter(href='index.html#')
+						a.icon-envelope(href='index.html#')
+					.col-lg-3.team
+						img.img-circle(
+							src='/dist/assets/team04.jpg'
+							height='90' width='90'
+						)
+						h4 Judge Judy
+						h5
+							i Human Relations
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, repellat.
+						a(href='index.html#')
+							i.icon-facebook
+						a(href='index.html#')
+							i.icon-twitter
+						a(href='index.html#')
+							i.icon-envelope
+
+		// footer
+		section#contact(name='contact')
+		#f
+			.container
+				.row
+					h3 CONTACT US
+					br
+					.col-lg-4
+						h4 Send us a message
+						h4
+							a(href='mailto:') email@email.email
+						br
+					.col-lg-4
+						h4 Call us
+						h4
+							a(href='phone:') 999-555-1234
+						br
+					.col-lg-4
+						h4 We are social
+						p
+							a(href='index.html#')
+								i.icon-facebook
+							a(href='index.html#')
+								i.icon-twitter
+							a(href='index.html#')
+								i.icon-envelope
+	#c
+		.container
+			p Created by #[a(href='http://jonoco.me/') jonoco]
+	
+	// accessory scripts
+
+	script(src='dist/js/bootstrap.min.js' type='text/javascript')
+	script(src='dist/js/classie.js' type='text/javascript')
+	script(src='dist/js/smoothscroll.js' type='text/javascript')
+	script(src='dist/js/main.js' type='text/javascript')
