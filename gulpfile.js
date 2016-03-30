@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('jade', function() {
-  gulp.src('src/views/*.jade')
+  gulp.src('src/views/index.jade')
     .pipe(jade())
     .pipe(gulp.dest('./'));
 });

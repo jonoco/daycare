@@ -1,0 +1,65 @@
+#dg
+	.container
+		.row
+			h3 HOME ABOUT CHARTS?
+			br
+			br
+			.col-lg-4
+				canvas#javascript(
+					height='130' width='130'
+				)
+				br
+				h4 Javascript
+				br
+				script(type='text/javascript').
+					var doughnutData = [
+						{
+							value: 70,
+							color:"#f85c37"
+						},
+						{
+							value : 30,
+							color : "#ecf0f1"
+						}
+					];
+					var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+
+			.col-lg-4
+				canvas#bootstrap(
+					height='130' width='130'
+				)
+				br
+				h4 bootstrap
+				br
+				script(type='text/javascript').
+					var doughnutData = [
+						{
+							value: 70,
+							color:"#f85c37"
+						},
+						{
+							value : 30,
+							color : "#ecf0f1"
+						}
+					];
+					var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+					
+			.col-lg-4
+				canvas#wordpress(
+					height='130' width='130'
+				)
+				br
+				h4 wordpress
+				br
+				script(type='text/javascript').
+					var doughnutData = [
+						{
+							value: 70,
+							color:"#f85c37"
+						},
+						{
+							value : 30,
+							color : "#ecf0f1"
+						}
+					];
+					var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);

@@ -4,6 +4,7 @@
 @import 'reset'; 		 		 // Meyer reset
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap'; // pull in bootstrap
 @import 'variables'; 		// global variables
-@import 'font-awesome'; // font-awesome 
-@import 'base';			 		// general styles
+@import 'font-awesome'; // font-awesome
 
+@import 'base';			 		// general styles
+@import 'menu';					// right side menu
