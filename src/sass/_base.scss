@@ -189,18 +189,23 @@ a:after {
 	background: #2f2f2f;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	text-align: center
-}
+	text-align: center;
 
-#f h3 {
-	color: white;	
-}
+	h3 { 
+		margin: 0 auto;
+		color: #fff; 
+	}
 
-#f i {
-	font-size: 26px;
-	color: white;
-	padding-left: 10px;
-	padding-right: 10px;
+	h4 {
+		color: #fff;
+	}
+
+	i {
+		font-size: 26px;
+		color: white;
+		padding-left: 10px;
+		padding-right: 10px;	
+	}
 }
 
 /* Copyright Wrap */
