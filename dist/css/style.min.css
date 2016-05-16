@@ -5605,11 +5605,11 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before, #testimonials .review:before, .clearfix:after, #testimonials .review:after {
   content: " ";
   display: table; }
 
-.clearfix:after {
+.clearfix:after, #testimonials .review:after {
   clear: both; }
 
 .center-block {
@@ -7212,8 +7212,8 @@ hr {
   letter-spacing: 2px; }
 
 /* Portfolio Wrap */
-#portfoliowrap {
-  background: url(../assets/portfolio-bg.jpg) no-repeat center top;
+#testimonialswrap {
+  background: url(../assets/testimonial-bg.jpg) no-repeat center top;
   margin-top: 0px;
   padding-top: 70px;
   text-align: center;
@@ -7224,11 +7224,8 @@ hr {
   background-size: 100%;
   background-size: cover; }
 
-#portfoliowrap h3 {
+#testimonialswrap h3 {
   color: #ffffff; }
-
-.port-space {
-  padding-bottom: 20px; }
 
 /* White Wrap */
 #w {
@@ -7245,36 +7242,12 @@ hr {
 #w bold {
   color: #2f2f2f; }
 
-/* Grey Wrap */
-#g {
-  background: #f2f2f2;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  text-align: center; }
-
 /* Dark Grey Wrap */
 #dg {
   background: #e0e0e0;
   padding-top: 70px;
   padding-bottom: 70px;
   text-align: center; }
-
-/* Footer Wrap */
-#f {
-  background: #2f2f2f;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  text-align: center; }
-  #f h3 {
-    margin: 0 auto;
-    color: #fff; }
-  #f h4 {
-    color: #fff; }
-  #f i {
-    font-size: 26px;
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px; }
 
 /* Copyright Wrap */
 #c {
@@ -7467,3 +7440,44 @@ hr {
     background: rgba(0, 0, 0, 0.2);
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out; }
+
+#contact {
+  background: #414141;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center; }
+  #contact p, #contact h5, #contact h4, #contact h3 {
+    color: #ddd; }
+  #contact i {
+    font-size: 26px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+#testimonials {
+  color: #ddd; }
+  #testimonials .review {
+    margin-bottom: 20px; }
+
+#about {
+  color: #000; }
+
+#aboutwrap {
+  background: url(../assets/about-bg.jpg) no-repeat center top;
+  margin-top: 0px;
+  padding-top: 70px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 300px;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-size: auto;
+  background-size: cover; }
+
+#services {
+  background: #ececec;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center; }

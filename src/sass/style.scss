@@ -2,9 +2,13 @@
 @import 'http://fonts.googleapis.com/css?family=Raleway:400,300,700';
 
 @import 'reset'; 		 		 // Meyer reset
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap'; // pull in bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap'; // bootstrap
 @import 'variables'; 		// global variables
 @import 'font-awesome'; // font-awesome
 
 @import 'base';			 		// general styles
 @import 'menu';					// right side menu
+@import 'contact';			// bottom contact bar
+@import 'testimonials'; // reviews
+@import 'about';				// about us
+@import 'services';			// our services

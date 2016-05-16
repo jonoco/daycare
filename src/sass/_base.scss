@@ -9,10 +9,10 @@
 
 body {
   background-color: #f2f2f2;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     color: #333;
 }
-
 
 /* Paragraph & Typographic */
 p {
@@ -73,7 +72,6 @@ a:after {
     padding: 0;
 }
 
-
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
@@ -115,8 +113,8 @@ a:after {
 }
 
 /* Portfolio Wrap */
-#portfoliowrap {
-	background: url(../assets/portfolio-bg.jpg) no-repeat center top;
+#testimonialswrap {
+	background: url(../assets/testimonial-bg.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:70px;
 	text-align:center;
@@ -137,14 +135,9 @@ a:after {
 }
 
 
-#portfoliowrap h3 {
+#testimonialswrap h3 {
 	color: #ffffff;
 }
-
-.port-space {
-	padding-bottom: 20px;
-}
-
 
 /* White Wrap */
 
@@ -165,47 +158,12 @@ a:after {
 	color: #2f2f2f;
 }
 
-
-/* Grey Wrap */
-
-#g {
-	background: #f2f2f2;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	text-align: center;
-}
-
 /* Dark Grey Wrap */
 #dg {
 	background: #e0e0e0;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	text-align: center;
-}
-
-/* Footer Wrap */
-
-#f {
-	background: #2f2f2f;
-	padding-top: 70px;
-	padding-bottom: 70px;
-	text-align: center;
-
-	h3 { 
-		margin: 0 auto;
-		color: #fff; 
-	}
-
-	h4 {
-		color: #fff;
-	}
-
-	i {
-		font-size: 26px;
-		color: white;
-		padding-left: 10px;
-		padding-right: 10px;	
-	}
 }
 
 /* Copyright Wrap */

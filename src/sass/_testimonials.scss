@@ -1,0 +1,8 @@
+#testimonials {
+	color: #ddd;
+
+	.review {
+		@extend .clearfix;
+		margin-bottom: 20px;
+	}
+}
