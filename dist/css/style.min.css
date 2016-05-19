@@ -7151,14 +7151,12 @@ p {
 
 /* Links */
 a {
-  color: #f85c37;
   word-wrap: break-word;
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   transition: color 0.1s ease-in, background 0.1s ease-in; }
 
 a:hover,
 a:focus {
-  color: #7b7b7b;
   text-decoration: none;
   outline: 0; }
 
@@ -7175,7 +7173,6 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-/* MENU CONF*/
 .menu {
   position: fixed;
   right: -200px;
@@ -7196,7 +7193,7 @@ hr {
     color: #ffffff;
     margin-top: 20px; }
     .menu h1.logo a:hover {
-      color: #f85c37; }
+      color: #FF91B9; }
   .menu img.logo {
     margin: 20px 0;
     max-width: 160px; }
@@ -7303,6 +7300,12 @@ hr {
     color: white;
     padding-left: 10px;
     padding-right: 10px; }
+  #contact a {
+    color: #FF91B9; }
+    #contact a:hover, #contact a:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0; }
 
 #testimonials {
   color: #ddd; }
@@ -7381,6 +7384,12 @@ hr {
   padding-top: 35px;
   padding-bottom: 35px;
   text-align: center; }
+  .white a {
+    color: #FF91B9; }
+    .white a:hover, .white a:focus {
+      color: #7b7b7b;
+      text-decoration: none;
+      outline: 0; }
   .white h3 {
     font-weight: 700;
     color: #7b7b7b;
@@ -7390,6 +7399,9 @@ hr {
   background: #222222;
   padding-top: 15px;
   text-align: right; }
-
-#c p {
-  color: #ccc; }
+  #c p {
+    color: #ccc; }
+  #c a {
+    color: #FF91B9; }
+    #c a:hover {
+      color: #ddd; }
