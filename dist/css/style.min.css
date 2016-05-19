@@ -7349,6 +7349,8 @@ hr {
   padding-top: 70px;
   padding-bottom: 70px;
   text-align: center; }
+  #services .service {
+    padding-bottom: 20px; }
 
 #headerwrap {
   background: url(../assets/splash-bg.jpg) no-repeat center top;
