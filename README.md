@@ -1,2 +1,2 @@
-#Peekaboo Daycare
+# Peekaboo Daycare
 A site for Peekaboo Daycare

@@ -15,9 +15,7 @@ var
 gulp.task('js', function(done) {
   gulp.src('src/js/main.js')
     .pipe(babel())
-    //.pipe(uglify())
-    //.pipe(concat('all.js'))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('docs/js'));
 
   done();
 });
@@ -26,9 +24,8 @@ gulp.task('sass', function(done) {
   gulp.src('src/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix())
-    // .pipe(minifyCSS())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./docs/css'));
 
   done();
 });
@@ -36,7 +33,7 @@ gulp.task('sass', function(done) {
 gulp.task('jade', function(done) {
   gulp.src('src/views/index.jade')
     .pipe(jade())
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./docs'));
 
   done();
 });
@@ -50,7 +47,7 @@ gulp.task('watch', function(done) {
 });
 
 gulp.task('webserver', function(done) {
-  gulp.src('./dist')
+  gulp.src('./docs')
     .pipe(webserver({
       livereload: true,
       open: true
