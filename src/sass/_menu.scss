@@ -1,5 +1,3 @@
-/* MENU CONF*/
-
 .menu {
 	position: fixed;
 	right: -200px;
@@ -22,7 +20,7 @@
 			color: #ffffff;
 			margin-top: 20px;
 
-			&:hover { color: #f85c37; }
+			&:hover { color: $pink; }
 		}
 	}
 
