@@ -22,7 +22,6 @@
     "node-sass": "4.12.0"
   },
   "repository": {},
-  "author": "Joshua Cox, http://jonoco.me",
   "dependencies": {
     "jade": "1.11.0"
   },
